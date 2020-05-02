@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Members Card</title>
+</head>
+<body>
+    <main class="main__wrapper">
+        <div style="padding: 10px; background-color: #003f6d;">
+            <div style="padding: 15px; background-color: #eaf0fe;">
+                <span>
+                    <table width="100%"><tbody><tr><td style="vertical-align: top; width:26%; padding-right:10px;">
+                        <div style="text-align: left;">
+                            <img src="https://i.imgur.com/q1a6Mz3.png" class="postimage" alt="Изображение">
+                        </div>
+                    </td>
+                    <td style="vertical-align: top; width:26%; ">
+                        <div style="text-align: center;">
+                            <span style="font-size: 130%; line-height: 116%;"> <br>
+                                <select id="rank">
+                                    <option value="Trooper I">Trooper I</option>
+                                    <option value="Trooper II">Trooper II</option>
+                                    <option value="Trooper III">Trooper III</option>
+                                    <option value="Sergant">Sergant</option>
+                                    <option value="Command">Command</option>
+                                </select><br>
+                                <input type="text" value ="PF-FS-000" id="nums" >
+                            </span>
+                        </div>
+                    </td>
+                    <td style="vertical-align: top; width:26%; padding-left:10px;">
+                        <div style="text-align: right;">
+                            <select name="" id="shev" class = "main__inf">
+                                <option value="https://i.imgur.com/8hOIU84.png">Trooper</option>
+                                <option value="https://i.imgur.com/cY7u8kg.png">Sergant</option>
+                                <option value="https://i.imgur.com/uPeKxJH.png">LIEUTENANT</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table><br>
+        <div style="padding: 2px; background-color: #003f6d;">
+            <span>
+                <span style="color: #FFFFFF">
+                    <div style="text-align: center;">
+                        <span style="font-size: 110%; line-height: 116%;">
+                            <span style="font-weight: bold">ОСНОВНАЯ ИНФОРМАЦИЯ</span>
+                        </span>
+                    </div>
+                </span>
+            </span>
+        </div>
+        <div style="border: 1px solid black; padding: 10px; background-color: #FFFFFF; color: rgb(0, 0, 0);">
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td style="vertical-align: top; width:25%; padding-right:10px;">
+                            <div style="max-width:95%;border:3px solid black;width: 150px;height: 150px; background-color: black;"><input type="text" value="ссылка на фото 150px" class = "main__inf" id="avatar"></div>>
+                        </td>
+                        <td style="vertical-align: top; width:75%; padding-left:10px;">
+                            <div style="text-align: left;">
+                                <table width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="vertical-align: top; width:50%; padding-right:10px;">
+                                               <textarea class = "main__name" id = "name"></textarea>
+            <div style="text-indent: 0.8em; font-size: 80%; line-height: 120%;">(Имя)</div></td>
+            <td style="vertical-align: top; width:50%; padding-left:10px;">
+               <textarea class = "main__name" id="sname"></textarea>
+            <div style="text-indent: 0.8em; font-size: 80%; line-height: 120%;">(Второе имя)</div></td>
+                    </tr>
+                </tbody>
+            </table><br>
+           <textarea class = "main__inf" id="surname"></textarea>
+            <div style="text-indent: 0.8em; font-size: 80%; line-height: 120%;">(Фамилия)</div><br>
+           <textarea class = "main__inf" id="date_start"></textarea>
+            <div style="text-indent: 0.8em; font-size: 80%; line-height: 120%;">(Дата начала работы)</div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table><br>
+            <div style="padding: 2px; background-color: #003f6d;">
+                <span>
+                    <span style="color: #FFFFFF"><div style="text-align: center;">
+                        <span style="font-size: 110%; line-height: 116%;">
+                            <span style="font-weight: bold">ОТДЕЛЫ И ДОЛЖНОСТИ</span>
+                        </span>
+                    </div>
+                </span>
+            </span>
+        </div>
+        <div style="border: 1px solid black; padding: 10px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+            <table width="100%"><tbody><tr><td style="vertical-align: top; width:26%; padding-right:10px;">
+                <div style="text-align: left;">
+                    <select name="" id="otdel" class = "otd">
+                        <option value="Highway Patrol">Highway Patrol</option>
+                        <option value="Training Division">Training Division</option>
+                        <option value="Investigation Division">Investigation Division</option>
+                        <option value="OPR"> OPR</option>
+                    </select>
+                </div>
+            </td>
+            <td style="vertical-align: top; width:26%; ">
+                <div style="text-align: center;">
+                    <input type="text" id = "link" value = "Ссылка на Personal Patrol File" class = "otd">
+                </div>
+            </td>
+            <td style="vertical-align: top; width:26%; padding-left:10px;">
+                <div style="text-align: right;"><select  id="otd_rank" class = "otd">
+                    <option value="Trooper I">Trooper I</option>
+                    <option value="Trooper II">Trooper II</option>
+                    <option value="Trooper III">Trooper III</option>
+                </select></div>
+            </td></tr></tbody></table></div><br>
+           <textarea class = "main__inf" id="gun"></textarea>
+            <div style="text-indent: 0.8em; font-size: 80%; line-height: 120%;">(Личное оружие)</div></div><br><br><div style="padding: 2px; background-color: #003f6d;"><span><span style="color: #FFFFFF"><div style="text-align: center;"><span style="font-size: 110%; line-height: 116%;"><span style="font-weight: bold">ПЕРСОНАЛЬНЫЕ ДАННЫЕ</span></span></div></span></span></div><div style="border: 1px solid black; padding: 10px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"><textarea class = "main__inf" id="born"></textarea>
+            <div style="text-indent: 0.8em; font-size: 80%; line-height: 120%;">(Место рождения)</div><br><table width="100%"><tbody><tr><td style="vertical-align: top; width:26%; padding-right:10px;">
+                <textarea class = "main__inf" id = "date_b"></textarea>
+            <div style="text-indent: 0.8em; font-size: 80%; line-height: 120%;">(Дата рождения)</div></td><td style="vertical-align: top; width:26%; ">
+                <textarea class = "main__inf" id = "yold"></textarea>
+            <div style="text-indent: 0.8em; font-size: 80%; line-height: 120%;">(Полных лет)</div></td><td style="vertical-align: top; width:26%; padding-left:10px;">
+            <select id="sex" class = "main__inf" style="height: 4vh;">
+                <option value="Мужчина">Мужчина</option>
+                <option value="Женщина">Женщина</option>
+            </select></td></tr></tbody></table><br><table width="100%"><tbody><tr><td style="vertical-align: top; width:75%; padding-right:10px;">
+                <textarea class = "main__inf" id="race"></textarea>
+            <div style="text-indent: 0.8em; font-size: 80%; line-height: 120%;">(Расовая принадлежность)</div></td><td style="vertical-align: top; width:25%; padding-left:10px;">
+                <textarea class = "main__inf" id="family"></textarea>
+            <div style="text-indent: 0.8em; font-size: 80%; line-height: 120%;">(Семейное положение)</div></td></tr></tbody></table></div><br><br><div style="padding: 2px; background-color: #003f6d;"><span><span style="color: #FFFFFF"><div style="text-align: center;"><span style="font-size: 110%; line-height: 116%;"><span style="font-weight: bold">КОНТАКТНЫЕ ДАННЫЕ</span></span></div></span></span></div><div style="border: 1px solid black; padding: 10px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+                <textarea class = "main__inf" id="adress"></textarea>
+            <div style="text-indent: 0.8em; font-size: 80%; line-height: 120%;">(Адрес проживания)</div><br>
+            <textarea class = "main__inf" id="num"></textarea>
+            <div style="text-indent: 0.8em; font-size: 80%; line-height: 120%;">(Рабочий номер телефона)</div></div><br><div style="text-align: center;"><span style="font-size: 85%; line-height: 116%;"><span style="font-weight: bold">© 2020 San Andreas Highway Patrol. All Rights Reserved.</span></span></div></span>
+        </div>
+        <div class = "submit" ><button class = "submit_but" id = "btn">Сгенерировать</button></div>
+        </div>  
+        <div id="modalWin"><div id="bufmodal">
+            <div class="modal_content"><textarea id = "outputBB" cols = "100" rows = "25" ></textarea> </div>
+        </div></div>  
+    </main>
+    <script src="script_mem.js"></script>
+</body>
+</html>
