@@ -16,9 +16,22 @@
     justify-content: center;
     align-items: center;
 }
-
-    .main {
-        
+    .otd{
+        border:1px solid rgba(0, 0, 0, .3);
+    }
+    .main__name {
+        width:30vw;
+        font-size:80%; 
+        margin: 5px;
+        background-color:white; 
+        border:1px solid rgba(0, 0, 0, .3);
+    }
+    .main__inf{
+        width:99%;
+        font-size:80%; 
+        margin: 5px;
+        background-color:white; 
+        border:1px solid rgba(0, 0, 0, .3);
     }
     .input_mainandetc{
 
@@ -47,6 +60,13 @@
         padding-top: 10px;
         display: flex;
         justify-content: center;   
+    }
+    .submit_but{
+    width: 30vw;
+    height: 5vh;
+    border-radius: 10px;
+    background-color:#eaf0fe ;
+    font-size: 150%;
     }
     #modalWin{
         display: none;
