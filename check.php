@@ -10,7 +10,7 @@ $posz = intval($_POST['posz']); // ïîëó÷àåì ïîçèöèþ ïî Z
 
 
 if (!empty($UID) & !empty($shift_ID) & !empty($posx))  { // ïðîâåðÿåì âñå âûøåíàïèñàííîå íà ïóñòîòó
-    echo $posx
+    echo $posx;
 	 $filed = "save.txt";
 	 file_put_contents($filed, $shift_ID);
 
