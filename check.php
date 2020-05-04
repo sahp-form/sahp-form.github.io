@@ -1,23 +1,23 @@
 <?php
-ini_set('display_errors','Off'); // îòêëþ÷àåì ïîêàç îøèáîê
-if ($conn->connect_error) { die("Error" . $conn->connect_error); } // ïðîâåðêà íà îøèáêó ïîäêëþ÷åíèÿ
+ini_set('display_errors','Off'); // Ã®Ã²ÃªÃ«Ã¾Ã·Ã Ã¥Ã¬ Ã¯Ã®ÃªÃ Ã§ Ã®Ã¸Ã¨Ã¡Ã®Ãª
+if ($conn->connect_error) { die("Error" . $conn->connect_error); } // Ã¯Ã°Ã®Ã¢Ã¥Ã°ÃªÃ  Ã­Ã  Ã®Ã¸Ã¨Ã¡ÃªÃ³ Ã¯Ã®Ã¤ÃªÃ«Ã¾Ã·Ã¥Ã­Ã¨Ã¿
 
-$UID = intval($_POST['UID']); // ïîëó÷àåì óíèêàëüíûé ID
-$shift_ID = intval($_POST['shift_ID']); // ïîëó÷àåì ID êðóçåðà
-$posx = intval($_POST['posx']); // ïîëó÷àåì ïîçèöèþ ïî X
-$posy = intval($_POST['posy']); // ïîëó÷àåì ïîçèöèþ ïî Y
-$posz = intval($_POST['posz']); // ïîëó÷àåì ïîçèöèþ ïî Z
+$UID = intval($_POST['UID']); // Ã¯Ã®Ã«Ã³Ã·Ã Ã¥Ã¬ Ã³Ã­Ã¨ÃªÃ Ã«Ã¼Ã­Ã»Ã© ID
+$shift_ID = intval($_POST['shift_ID']); // Ã¯Ã®Ã«Ã³Ã·Ã Ã¥Ã¬ ID ÃªÃ°Ã³Ã§Ã¥Ã°Ã 
+$posx = intval($_POST['posx']); // Ã¯Ã®Ã«Ã³Ã·Ã Ã¥Ã¬ Ã¯Ã®Ã§Ã¨Ã¶Ã¨Ã¾ Ã¯Ã® X
+$posy = intval($_POST['posy']); // Ã¯Ã®Ã«Ã³Ã·Ã Ã¥Ã¬ Ã¯Ã®Ã§Ã¨Ã¶Ã¨Ã¾ Ã¯Ã® Y
+$posz = intval($_POST['posz']); // Ã¯Ã®Ã«Ã³Ã·Ã Ã¥Ã¬ Ã¯Ã®Ã§Ã¨Ã¶Ã¨Ã¾ Ã¯Ã® Z
 
 
-if (!empty($UID) & !empty($shift_ID) & !empty($posx))  { // ïðîâåðÿåì âñå âûøåíàïèñàííîå íà ïóñòîòó
-    echo "Óñïåøíî"
+if (!empty($UID) & !empty($shift_ID) & !empty($posx))  { // Ã¯Ã°Ã®Ã¢Ã¥Ã°Ã¿Ã¥Ã¬ Ã¢Ã±Ã¥ Ã¢Ã»Ã¸Ã¥Ã­Ã Ã¯Ã¨Ã±Ã Ã­Ã­Ã®Ã¥ Ã­Ã  Ã¯Ã³Ã±Ã²Ã®Ã²Ã³
+    echo $posx
 
 }
 	$result->close();
 } else { 
-    echo "Íå ïîëó÷åíû äàííûå";
+    echo $shift_ID;
 }
 
-$conn->close(); // çàêðûâàåì êîííåêò
+$conn->close(); // Ã§Ã ÃªÃ°Ã»Ã¢Ã Ã¥Ã¬ ÃªÃ®Ã­Ã­Ã¥ÃªÃ²
 
 ?>
